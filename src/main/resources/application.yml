@@ -1,0 +1,21 @@
+server:
+  port: 3000
+
+spring:
+  profiles:
+    active: prod
+
+#Logging section settings
+#levels are ordered as follows: TRACE < DEBUG < INFO < WARN < ERROR
+logging:
+  level:
+    com:
+      project:
+        performance:
+          PerformanceMonitorInterceptor: TRACE
+    org:
+      springframework:
+        web: DEBUG
+
+animals:
+  anim: test

@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "01416d58-9ee7-4d83-93d1-a0fd4ad624be",
+		"name": "Rockwell",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7210600"
+	},
+	"item": [
+		{
+			"name": "Get mappings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"category\":\"ANIMALS\",\"numbers\":[1,2,4,10]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/divisor/divisors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"divisor",
+						"divisors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

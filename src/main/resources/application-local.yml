@@ -1,0 +1,12 @@
+#Logging section settings
+#levels are ordered as follows: TRACE < DEBUG < INFO < WARN < ERROR
+logging:
+  level:
+    com:
+      project:
+        performance:
+          PerformanceMonitorInterceptor: DEBUG
+    org:
+      springframework:
+        web: DEBUG
+    root: INFO
